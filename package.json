@@ -1,0 +1,36 @@
+{
+  "name": "hapi-table",
+  "version": "0.0.0",
+  "description": "Hapi plugin for exposing a routing table of a server",
+  "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
+  "contributors": [],
+  "repository": "iceddev/hapi-table",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "eslint src/**/*.js && jscs src/**/*.js",
+    "build": "babel ./src/ --out-dir ./",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "eslint": "0.23.0",
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
+    "babel": "^5.5.8"
+  },
+  "keywords": [
+    "hapi",
+    "plugin",
+    "routes",
+    "routing",
+    "table"
+  ]
+}
