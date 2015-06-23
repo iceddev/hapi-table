@@ -19,7 +19,9 @@
     "build": "babel ./src/ --out-dir ./",
     "prepublish": "npm run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^3.9.3"
+  },
   "devDependencies": {
     "jscs": "^1.13.1",
     "eslint": "0.23.0",
