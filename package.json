@@ -1,10 +1,10 @@
 {
-  "name": "hapi-table",
+  "name": "tableflipper",
   "version": "0.0.0",
   "description": "Hapi plugin for exposing a routing table of a server",
   "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
   "contributors": [],
-  "repository": "iceddev/hapi-table",
+  "repository": "iceddev/tableflipper",
   "license": "MIT",
   "engines": {
     "node": ">= 0.10"
