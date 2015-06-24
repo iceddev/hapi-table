@@ -7,19 +7,20 @@ function filterRoutes(route){
   return (route.settings.plugins.tableflipper === false);
 }
 
-function findAllRoutes(result, host){
-  const { id } = host.info;
+function findAllRoutes(result, { info, table }){
+  const { id } = info;
 
-  const filteredRoutes = _.reject(host.table, filterRoutes);
+  const filteredRoutes = _.reject(table, filterRoutes);
 
   const routes = _.map(filteredRoutes, (route) => {
-    const { path, method } = route;
+    const { path, method, fingerprint } = route;
 
-    return {
+    return _.assign({
       id: id,
       path: path,
-      method: method
-    };
+      method: method,
+      fingerprint: fingerprint
+    }, info);
   });
 
   return result.concat(routes);
