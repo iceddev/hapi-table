@@ -41,6 +41,8 @@ function tableflipper(server, opts = {}, done){
     path: endpoint,
     handler: handler,
     config: {
+      // TODO: add auth configuration
+      auth: false,
       plugins: {
         tableflipper: false
       }
